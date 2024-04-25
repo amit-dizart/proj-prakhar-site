@@ -1,0 +1,31 @@
+.welcomeSection {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.welcomeText {
+  color: rgb(230, 230, 230);
+  font-family: cursiveText;
+}
+
+.scrollDown{
+  position: absolute;
+  bottom: 50px;
+}
+
+.aboutUsSection{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card{
+  width: 240px;
+  height: 300px;
+  border-color: aliceblue;
+  border-width: 1px;
+}
