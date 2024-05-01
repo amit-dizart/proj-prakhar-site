@@ -6,19 +6,16 @@ import ScrollDown from "../Components/Swipedown";
 import image from "../assets/Functions-of-a-Consulting-Company.webp";
 import appointment from "../assets/appointment.png";
 import contact from "../assets/contact.webp";
-import { services } from "../JSON/services";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import bb from "../assets/bb.png";
+import dizlogo from "../assets/dizlogo.jpeg";
 import { FaLinkedin } from "react-icons/fa";
 import { InlineWidget } from "react-calendly";
-import { Card, CardContent, Typography, Button } from "@mui/material";
 
 export default function Pages() {
   const emailAddress = "Info@asoc.in";
   const phoneNo = "9660638585";
   return (
-    <div className="bg-[#242124]">
+    <div className="bg-gradient-to-bl from-slate-800 to-black">
       {/* <Header /> */}
       <div id="Home" className="welcomeSection">
         <div className="flex flex-col justify-center items-center gap">
@@ -45,14 +42,7 @@ export default function Pages() {
 
         <div className="flex flex-col md:flex-row md:justify-center items-center gap-5 ">
           <div className="md:w-[50%]">
-            <img
-              style={{
-                borderRadius: "18% 82% 11% 89% / 65% 16% 84% 35%",
-              }}
-              className="shadow-2xl md:w-[90%]"
-              src={image}
-              alt=""
-            />
+            <img className=" md:w-[90%]" src={bb} alt="" />
           </div>
 
           <div className="md:w-[40%] text-justify">
@@ -107,12 +97,18 @@ export default function Pages() {
         </div>
 
         <div className="flex flex-col md:flex-row md:justify-center gap-10 ">
-          <div className="md:w-[50%] lg:mt-10 ">
+          <div className="md:w-[50%] lg:mt-24 ">
             <img className=" md:w-[90%]" src={contact} alt="" />
           </div>
 
-          <div className="w-[70%]">
-            <InlineWidget url="" />
+          <div className="w-[60%] border-8 rounded-3xl border-white">
+            <InlineWidget
+            
+              styles={{
+                height: "775px",
+              }}
+              url=""
+            />
           </div>
         </div>
       </div>
@@ -161,30 +157,21 @@ export default function Pages() {
               <p>@{new Date().getFullYear()} ASOC. All right reserved</p>
             </div>
             <div className="sb_footer_below_links">
-              <a href="" style={{ pointerEvents: "none" }}>
-                <div>
-                  <p>Terms & Conditions</p>
-                </div>
-              </a>
-              <a href="" style={{ pointerEvents: "none" }}>
-                <div>
-                  <p>Privacy</p>
-                </div>
-              </a>
-              <a href="" style={{ pointerEvents: "none" }}>
-                <div>
-                  <p>Security</p>
-                </div>
-              </a>
-              <a href="" style={{ pointerEvents: "none" }}>
-                <div>
-                  <p>Cookie Declaration</p>
-                </div>
-              </a>
               <a href="https://www.linkedin.com/company/dizart-solutions-llp/">
                 <div>
                   <p>Developed By : Dizart Solutions</p>
                 </div>
+              </a>
+              <a href="https://www.linkedin.com/company/dizart-solutions-llp/">
+                <img
+                  style={{
+                    marginLeft: "5px",
+                    height: "20px",
+                    width: "20px",
+                  }}
+                  src={dizlogo}
+                  alt=""
+                />
               </a>
             </div>
           </div>
