@@ -1,7 +1,7 @@
 export const services = [
   {
     "name": "Appointment Setting",
-    "desc": "Introducing ASOC's Appointment Setting service: Unlocking B2B growth with precision. We deliver top-tier leads tailored to your business and arrange discovery calls with your prospects. Seize the opportunity to showcase your offerings and forge meaningful connections. Elevate your lead generation game with ASOC today."
+    "desc": "Introducing ASOC's Appointment Setting service: Unlocking B2B growth with precision. We deliver top-tier leads tailored to your business and arrange discovery calls with your prospects. Seize the opportunity to showcase your offerings."
   },
   {
     "name": "Customer Success",
