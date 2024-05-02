@@ -13,7 +13,7 @@ import { InlineWidget } from "react-calendly";
 
 export default function Pages() {
   const emailAddress = "Info@asoc.in";
-  const phoneNo = "9660638585";
+  const phoneNo = "+91 9660638585";
   return (
     <div className="bg-gradient-to-bl from-slate-800 to-black">
       {/* <Header /> */}
@@ -27,7 +27,7 @@ export default function Pages() {
             <img className="w-[140px] mt-[-30px]" src={logo} alt="" />
           </div>
 
-          <div className="mt-[-10px] ">Trusted Demand Generation Partner</div>
+          <div className="mt-[-10px] ">We Set Discovery Calls With Your Prospects.</div>
         </div>
         <div className="scrollDown">
           <div className="welcomeText mb-[55px]">Swipe Down</div>
@@ -35,16 +35,12 @@ export default function Pages() {
         </div>
       </div>
 
-      <div id="About" className="aboutUsSection p-2 sm:p-0 mb-12">
+      {/* <div id="About" className="aboutUsSection p-2 sm:p-0 mb-12">
         <div className="text-[30px] welcomeText sm:text-[40px] mb-12 ">
           About Us
         </div>
 
         <div className="flex flex-col md:flex-row md:justify-center items-center gap-5 ">
-          <div className="md:w-[50%]">
-            <img className=" md:w-[90%]" src={bb} alt="" />
-          </div>
-
           <div className="md:w-[40%] text-justify">
             Welcome to ASOC, your premier destination for transformative managed
             sales service outsourcing solutions. At ASOC, we specialize in
@@ -68,48 +64,35 @@ export default function Pages() {
             growth and prosperity.
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div id="Services" className="aboutUsSection p-2 sm:p-0  mb-12">
+      <div id="About" className="aboutUsSection p-2 sm:p-0  h-[70vh] mb-12">
         <div className="text-[30px] welcomeText sm:text-[40px] mb-3 ">
-          Our Offering
+          What We Do?
         </div>
 
         <div className="flex flex-col md:flex-row md:justify-center items-center gap-5 ">
           <div className="md:w-[40%] text-justify">
-            Experience the difference with ASOC's Appointment Setting service.
-            Our dedicated team utilizes cutting-edge strategies to connect you
-            with high-value prospects, ensuring every interaction is a step
-            towards your business goals. With our personalized approach, you'll
-            not only save time but also maximize your ROI. Don't let
-            opportunities slip away - partner with ASOC today and take your B2B
-            growth to new heights.
+            At ASOC, we specialize in revolutionizing the way businesses approach sales, providing B2B appointment setting service that empower organizations to optimize revenue & drive sustainable growth. With a deep understanding of the intricacies of outbound demand generation process across various industries, we pride ourselves on delivering solution that is strategically designed to meet the unique needs and objectives of each client. Whether you're a burgeoning startup or an established enterprise, we are dedicated to build your sales pipeline. Experience the difference with ASOC's Appointment Setting service. Our dedicated team utilizes cutting-edge strategies to connect you with your high-value prospects. Seize the opportunity to showcase your offerings and forge meaningful connections.
           </div>
-          <div className="md:w-[50%]">
+          {/* <div className="md:w-[50%]">
             <img className=" md:w-[90%]" src={appointment} alt="" />
-          </div>
+          </div> */}
         </div>
       </div>
 
       <div id="Meeting" className="aboutUsSection p-2 sm:p-0 mb-12">
-        <div className="text-[30px] welcomeText sm:text-[40px] mb-12 ">
-          Let's talk
+        <div className="text-[30px] welcomeText sm:text-[40px] mb-3 text-center ">
+          Are we on the same page? Let’s Talk
         </div>
-
-        <div className="flex flex-col md:flex-row md:justify-center gap-10 ">
-          <div className="md:w-[50%] lg:mt-24 ">
-            <img className=" md:w-[90%]" src={contact} alt="" />
-          </div>
-
-          <div className="w-[60%] border-8 rounded-3xl border-white">
-            <InlineWidget
-            
-              styles={{
-                height: "775px",
-              }}
-              url=""
-            />
-          </div>
+        <div className="w-[95vw] sm:w-[50vw] h-[100vh] flex flex-col justify-start border-3">
+          <InlineWidget
+            styles={{
+              height: "100vh",
+              borderRadius: "10px"
+            }}
+            url="https://calendly.com/prakhar-r3vy/30min"
+          />
         </div>
       </div>
 
@@ -118,8 +101,6 @@ export default function Pages() {
           <div className="sb_footer_links">
             <div className="sb_footer_links_div">
               <h4>Address</h4>
-              <a href={`tel:${phoneNo}`}>Phone: {phoneNo}</a>
-              <a href={`mailto:${emailAddress}`}>Email: {emailAddress}</a>
               <a href="" style={{ pointerEvents: "none" }}>
                 <p>Jaipur, Rajasthan, India</p>
               </a>
@@ -131,17 +112,19 @@ export default function Pages() {
                 <p>Home</p>
               </a>
               <a href="#About">
-                <p>About</p>
+                <p>What We Do?</p>
               </a>
-              <a href="#Services">
-                <p>Services</p>
+              <a href="#Meeting">
+                <p>Let's Connect</p>
               </a>
             </div>
 
             <div className="sb_footer_links_div">
               <h4>Get In Touch</h4>
-              <div className="socialmedia">
-                <a href="https://www.linkedin.com/company/asocpvtltd/">
+              <div className="flex flex-col socialmedia gap-3">
+                <a href={`tel:${phoneNo}`}>{phoneNo}</a>
+                <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
+                <a target="_blank" href="https://www.linkedin.com/company/asocpvtltd/">
                   <p>
                     <FaLinkedin
                       style={{ color: "#0077b5", fontSize: "30px" }}
@@ -156,13 +139,8 @@ export default function Pages() {
             <div className="sb_footer_copyright">
               <p>@{new Date().getFullYear()} ASOC. All right reserved</p>
             </div>
-            <div className="sb_footer_below_links">
-              <a href="https://www.linkedin.com/company/dizart-solutions-llp/">
-                <div>
-                  <p>Developed By : Dizart Solutions</p>
-                </div>
-              </a>
-              <a href="https://www.linkedin.com/company/dizart-solutions-llp/">
+            <div className="sb_footer_below_links flex flex-row">
+              {/* <a href="https://www.linkedin.com/company/dizart-solutions-llp/">
                 <img
                   style={{
                     marginLeft: "5px",
@@ -172,6 +150,11 @@ export default function Pages() {
                   src={dizlogo}
                   alt=""
                 />
+              </a> */}
+              <a target="_blank" href="https://www.linkedin.com/company/dizart-solutions-llp/">
+                <div>
+                  <p>Developed By : Dizart Solutions LLP</p>
+                </div>
               </a>
             </div>
           </div>
