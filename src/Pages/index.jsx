@@ -13,7 +13,7 @@ import { InlineWidget } from "react-calendly";
 
 export default function Pages() {
   const emailAddress = "Info@asoc.in";
-  const phoneNo = "+91 9660638585";
+  const phoneNo = "9660638585";
   return (
     <div className="bg-gradient-to-bl from-slate-800 to-black">
       {/* <Header /> */}
