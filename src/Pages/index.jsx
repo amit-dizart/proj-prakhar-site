@@ -18,16 +18,15 @@ export default function Pages() {
     <div className="bg-gradient-to-bl from-slate-800 to-black">
       {/* <Header /> */}
       <div id="Home" className="welcomeSection">
-        <div className="flex flex-col justify-center items-center gap">
+        <div className="flex flex-col justify-center items-center gap mt-[-90px]">
           <div className="text-[30px] welcomeText sm:text-[60px]">
-            {" "}
             Welcome to
           </div>
           <div>
-            <img className="w-[140px] mt-[-30px]" src={logo} alt="" />
+            <img className="w-[250px] mt-[-60px]" src={logo} alt="" />
           </div>
 
-          <div className="mt-[-10px] ">We Set Discovery Calls With Your Prospects.</div>
+          <div className="mt-[-30px] ">We Set Discovery Calls With Your Prospects.</div>
         </div>
         <div className="scrollDown">
           <div className="welcomeText mb-[55px]">Swipe Down</div>
